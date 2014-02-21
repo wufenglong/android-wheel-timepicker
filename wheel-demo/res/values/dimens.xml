@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="wheel_text_size_time">18dp</dimen>
+    <dimen name="wheel_text_size_weekday">16dp</dimen>
+</resources>

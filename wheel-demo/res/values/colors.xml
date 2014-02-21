@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_wheel_text_size_time">#FF111111</color>
+    <color name="color_wheel_text_size_weekday">#777</color>
+    <drawable name="half_transparent_background">#66000000</drawable>
+    <drawable name="transparent_background">#00000000</drawable>
+</resources>

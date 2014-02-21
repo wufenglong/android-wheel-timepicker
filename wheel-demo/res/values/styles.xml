@@ -1,0 +1,27 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="wheel_text_time_style">
+        <item name="android:textColor">@color/color_wheel_text_size_time</item>
+        <item name="android:textSize">@dimen/wheel_text_size_time</item>
+    </style>
+
+    <style name="wheel_text_weekday_style">
+        <item name="android:textColor">@color/color_wheel_text_size_weekday</item>
+        <item name="android:textSize">@dimen/wheel_text_size_weekday</item>
+    </style>
+
+    <style name="half_transparent">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowBackground">@drawable/half_transparent_background</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:colorForeground">#fff</item>
+    </style>
+    <!-- animation 样式 -->
+    <style name="downIn_downOut_activityAnimation" parent="@android:style/Animation">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_down_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_down_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_down_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_down_out</item>
+    </style>
+</resources>

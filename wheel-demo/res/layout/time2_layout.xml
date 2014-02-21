@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent">
+
+    <LinearLayout
+        android:id="@+id/time_picker_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_height="135dp"
+                android:id="@+id/wheels"
+                android:layout_width="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/bg_date">
+
+                <kankan.wheel.widget.WheelView
+                    android:id="@+id/day"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content" />
+
+                <View
+                    android:background="@drawable/ic_date_divider"
+                    android:layout_width="3dp"
+                    android:layout_height="fill_parent" />
+
+                <kankan.wheel.widget.WheelView
+                    android:id="@+id/hour"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content" />
+
+                <View
+                    android:background="@drawable/ic_date_divider"
+                    android:layout_width="3dp"
+                    android:layout_height="fill_parent" />
+
+                <kankan.wheel.widget.WheelView
+                    android:id="@+id/mins"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content" />
+                <!--<kankan.wheel.widget.WheelView android:id="@+id/ampm"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"/>-->
+            </LinearLayout>
+
+            <View
+                android:layout_centerVertical="true"
+                android:layout_alignStart="@id/wheels"
+                android:layout_alignEnd="@id/wheels"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/ic_date_mask"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/show"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>
